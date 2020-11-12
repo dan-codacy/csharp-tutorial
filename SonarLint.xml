@@ -1,0 +1,1900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalysisInput>
+    <Rules>
+    
+        <!-- "=+" should not be used instead of "+=" -->
+        <Rule> 
+            <Key>S2757</Key>
+        </Rule>
+
+        <!-- "==" should not be used when "Equals" is overridden -->
+        <Rule> 
+            <Key>S1698</Key>
+        </Rule>
+        
+        <!-- "Any()" should be used to test for emptiness -->
+        <!-- <Rule>
+            <Key>S1155</Key>
+        </Rule> -->
+        
+        <!-- "Assembly.GetExecutingAssembly" should not be called -->
+        <!-- <Rule>
+            <Key>S3902</Key>
+        </Rule> -->
+        
+        <!-- "Assembly.Load" should be used -->
+        <!-- <Rule>
+            <Key>S3885</Key>
+        </Rule> -->
+        
+        <!-- "CoSetProxyBlanket" and "CoInitializeSecurity" should not be used -->
+        <!-- <Rule>
+            <Key>S3884</Key>
+        </Rule> -->
+
+        <!-- "ConfigureAwait(false)" should be used -->
+        <Rule> 
+            <Key>S3216</Key>
+        </Rule>
+        
+        <!-- "ConstructorArgument" parameters should exist in constructors -->
+        <!-- <Rule>
+            <Key>S4260</Key>
+        </Rule> -->
+
+        <!-- "Equals" and the comparison operators should be overridden when implementing "IComparable" -->
+        <Rule> 
+            <Key>S1210</Key>
+        </Rule>
+
+        <!-- "Equals(Object)" and "GetHashCode()" should be overridden in pairs -->
+        <Rule> 
+            <Key>S1206</Key>
+        </Rule>
+        
+        <!-- "Exception" should not be caught when not required by called methods -->
+        <!-- <Rule>
+            <Key>S2221</Key>
+        </Rule> -->
+
+        <!-- "Explicit" conversions of "foreach" loops should not be used -->
+        <Rule> 
+            <Key>S3217</Key>
+        </Rule>
+
+        <!-- "GC.Collect" should not be called -->
+        <Rule> 
+            <Key>S1215</Key>
+        </Rule>
+        
+        <!-- "GC.SuppressFinalize" should not be called -->
+        <!-- <Rule>
+            <Key>S3971</Key>
+        </Rule> -->
+
+        <!-- "GC.SuppressFinalize" should not be invoked for types without destructors -->
+        <Rule> 
+            <Key>S3234</Key>
+        </Rule>
+        
+        <!-- "Generic.List" instances should not be part of public APIs -->
+        <!-- <Rule>
+            <Key>S3956</Key>
+        </Rule> -->
+
+        <!-- "GetHashCode" should not reference mutable fields -->
+        <Rule> 
+            <Key>S2328</Key>
+        </Rule>
+        
+        <!-- "IDisposable" should be implemented correctly -->
+        <!-- <Rule>
+            <Key>S3881</Key>
+        </Rule> -->
+
+        <!-- "IDisposables" created in a "using" statement should not be returned -->
+        <Rule> 
+            <Key>S2997</Key>
+        </Rule>
+
+        <!-- "IDisposables" should be disposed -->
+        <Rule> 
+            <Key>S2930</Key>
+        </Rule>
+        
+        <!-- "IEnumerable" LINQs should be simplified -->
+        <!-- <Rule>
+            <Key>S2971</Key>
+        </Rule> -->
+        
+        <!-- "ISerializable" should be implemented correctly -->
+        <!-- <Rule>
+            <Key>S3925</Key>
+        </Rule> -->
+
+        <!-- "IndexOf" checks should not be for positive numbers -->
+        <Rule> 
+            <Key>S2692</Key>
+        </Rule>
+
+        <!-- "NaN" should not be used in comparisons -->
+        <Rule> 
+            <Key>S2688</Key>
+        </Rule>
+
+        <!-- "Object.ReferenceEquals" should not be used for value types -->
+        <Rule> 
+            <Key>S2995</Key>
+        </Rule>
+        
+        <!-- "Obsolete" attributes should include explanations -->
+        <!-- <Rule>
+            <Key>S1123</Key>
+        </Rule> -->
+        
+        <!-- "P/Invoke" methods should not be visible -->
+        <!-- <Rule>
+            <Key>S4214</Key>
+        </Rule> -->
+        
+        <!-- "PartCreationPolicyAttribute" should be used with "ExportAttribute" -->
+        <!-- <Rule>
+            <Key>S4428</Key>
+        </Rule> -->
+
+        <!-- "SafeHandle.DangerousGetHandle" should not be called -->
+        <Rule> 
+            <Key>S3869</Key>
+        </Rule>
+
+        <!-- "ServiceContract" and "OperationContract" attributes should be used together -->
+        <Rule> 
+            <Key>S3597</Key>
+        </Rule>
+        
+        <!-- "Shared" parts should not be created with "new" -->
+        <!-- <Rule>
+            <Key>S4277</Key>
+        </Rule> -->
+        
+        <!-- "System.Uri" arguments should be used instead of strings -->
+        <!-- <Rule>
+            <Key>S4005</Key>
+        </Rule> -->
+
+        <!-- "ThreadStatic" fields should not be initialized -->
+        <Rule> 
+            <Key>S2996</Key>
+        </Rule>
+
+        <!-- "ThreadStatic" should not be used on non-static fields -->
+        <Rule> 
+            <Key>S3005</Key>
+        </Rule>
+
+        <!-- "ToString()" calls should not be redundant -->
+        <Rule> 
+            <Key>S1858</Key>
+        </Rule>
+
+        <!-- "ToString()" method should not return null -->
+        <Rule> 
+            <Key>S2225</Key>
+        </Rule>
+        
+        <!-- "ValueTask" should be consumed correctly -->
+        <!-- <Rule>
+            <Key>S5034</Key>
+        </Rule> -->
+
+        <!-- "[DefaultValue]" should not be used when "[DefaultParameterValue]" is meant -->
+        <Rule> 
+            <Key>S3451</Key>
+        </Rule>
+        
+        <!-- "[ExpectedException]" should not be used -->
+        <!-- <Rule>
+            <Key>S3431</Key>
+        </Rule> -->
+
+        <!-- "[Optional]" should not be used on "ref" or "out" parameters -->
+        <Rule> 
+            <Key>S3447</Key>
+        </Rule>
+
+        <!-- "abstract" classes should not have "public" constructors -->
+        <Rule> 
+            <Key>S3442</Key>
+        </Rule>
+
+        <!-- "async" and "await" should not be used as identifiers -->
+        <Rule> 
+            <Key>S2306</Key>
+        </Rule>
+
+        <!-- "async" methods should not return "void" -->
+        <Rule> 
+            <Key>S3168</Key>
+        </Rule>
+
+        <!-- "base.Equals" should not be used to check for reference equality in "Equals" if "base" is not "object" -->
+        <Rule> 
+            <Key>S3397</Key>
+        </Rule>
+
+        <!-- "catch" clauses should do more than rethrow -->
+        <Rule> 
+            <Key>S2737</Key>
+        </Rule>
+        
+        <!-- "default" clauses should be first or last -->
+        <!-- <Rule>
+            <Key>S4524</Key>
+        </Rule> -->
+
+        <!-- "for" loop increment clauses should modify the loops' counters -->
+        <Rule> 
+            <Key>S1994</Key>
+        </Rule>
+
+        <!-- "for" loop stop conditions should be invariant -->
+        <Rule> 
+            <Key>S127</Key>
+        </Rule>
+        
+        <!-- "goto" statement should not be used -->
+        <!-- <Rule>
+            <Key>S907</Key>
+        </Rule> -->
+        
+        <!-- "if ... else if" constructs should end with "else" clauses -->
+        <!-- <Rule>
+            <Key>S126</Key>
+        </Rule> -->
+
+        <!-- "interface" instances should not be cast to concrete types -->
+        <Rule> 
+            <Key>S3215</Key>
+        </Rule>
+        
+        <!-- "is" should not be used with "this" -->
+        <!-- <Rule>
+            <Key>S3060</Key>
+        </Rule> -->
+        
+        <!-- "nameof" should be used -->
+        <!-- <Rule>
+            <Key>S2302</Key>
+        </Rule> -->
+        
+        <!-- "new Guid()" should not be used -->
+        <!-- <Rule>
+            <Key>S4581</Key>
+        </Rule> -->
+
+        <!-- "operator==" should not be overloaded on reference types -->
+        <Rule> 
+            <Key>S3875</Key>
+        </Rule>
+
+        <!-- "out" and "ref" parameters should not be used -->
+        <Rule> 
+            <Key>S3874</Key>
+        </Rule>
+        
+        <!-- "params" should be used instead of "varargs" -->
+        <!-- <Rule>
+            <Key>S4061</Key>
+        </Rule> -->
+
+        <!-- "params" should be used on overrides -->
+        <Rule> 
+            <Key>S3262</Key>
+        </Rule>
+
+        <!-- "params" should not be introduced on overrides -->
+        <Rule> 
+            <Key>S3600</Key>
+        </Rule>
+
+        <!-- "sealed" classes should not have "protected" members -->
+        <Rule> 
+            <Key>S2156</Key>
+        </Rule>
+        
+        <!-- "static readonly" constants should be "const" instead -->
+        <!-- <Rule>
+            <Key>S3962</Key>
+        </Rule> -->
+        
+        <!-- "static" fields should be initialized inline -->
+        <!-- <Rule>
+            <Key>S3963</Key>
+        </Rule> -->
+        
+        <!-- "string.IsNullOrEmpty" should be used -->
+        <!-- <Rule>
+            <Key>S3256</Key>
+        </Rule> -->
+
+        <!-- "string.ToCharArray()" should not be called redundantly -->
+        <Rule> 
+            <Key>S3456</Key>
+        </Rule>
+        
+        <!-- "switch case" clauses should not have too many lines of code -->
+        <!-- <Rule>
+            <Key>S1151</Key>
+        </Rule> -->
+
+        <!-- "switch" statements should have at least 3 "case" clauses -->
+        <Rule> 
+            <Key>S1301</Key>
+        </Rule>
+        
+        <!-- "switch" statements should not be nested -->
+        <!-- <Rule>
+            <Key>S1821</Key>
+        </Rule> -->
+        
+        <!-- "switch" statements should not have too many "case" clauses -->
+        <!-- <Rule>
+            <Key>S1479</Key>
+        </Rule> -->
+
+        <!-- "switch/Select" statements should contain a "default/Case Else" clauses -->
+        <Rule> 
+            <Key>S131</Key>
+        </Rule>
+        
+        <!-- "this" should not be exposed from constructors -->
+        <!-- <Rule>
+            <Key>S3366</Key>
+        </Rule> -->
+        
+        <!-- "try" statements with identical "catch" and/or "finally" blocks should be merged -->
+        <!-- <Rule>
+            <Key>S2327</Key>
+        </Rule> -->
+
+        <!-- "value" parameters should be used -->
+        <Rule> 
+            <Key>S3237</Key>
+        </Rule>
+        
+        <!-- A "for" loop update clause should move the counter in the right direction -->
+        <!-- <Rule>
+            <Key>S2251</Key>
+        </Rule> -->
+        
+        <!-- A "while" loop should be used instead of a "for" loop -->
+        <!-- <Rule>
+            <Key>S1264</Key>
+        </Rule> -->
+        
+        <!-- A close curly brace should be located at the beginning of a line -->
+        <!-- <Rule>
+            <Key>S1109</Key>
+        </Rule> -->
+        
+        <!-- A conditionally executed single line should be denoted by indentation -->
+        <!-- <Rule>
+            <Key>S3973</Key>
+        </Rule> -->
+        
+        <!-- AES encryption algorithm should be used with secured mode -->
+        <!-- <Rule>
+            <Key>S4432</Key>
+        </Rule> -->
+        
+        <!-- ASP.NET HTTP request validation feature should not be disabled -->
+        <!-- <Rule>
+            <Key>S4564</Key>
+        </Rule> -->
+        
+        <!-- All branches in a conditional structure should not have exactly the same implementation -->
+        <!-- <Rule>
+            <Key>S3923</Key>
+        </Rule> -->
+        
+        <!-- An abstract class should have both abstract and concrete methods -->
+        <!-- <Rule>
+            <Key>S1694</Key>
+        </Rule> -->
+
+        <!-- Anonymous delegates should not be used to unsubscribe from Events -->
+        <Rule> 
+            <Key>S3244</Key>
+        </Rule>
+        
+        <!-- Arguments of public methods should be validated against null -->
+        <!-- <Rule>
+            <Key>S3900</Key>
+        </Rule> -->
+
+        <!-- Array covariance should not be used -->
+        <Rule> 
+            <Key>S2330</Key>
+        </Rule>
+        
+        <!-- Assemblies should be marked as CLS compliant -->
+        <!-- <Rule>
+            <Key>S3990</Key>
+        </Rule> -->
+        
+        <!-- Assemblies should be marked with "NeutralResourcesLanguageAttribute" -->
+        <!-- <Rule>
+            <Key>S4026</Key>
+        </Rule> -->
+        
+        <!-- Assemblies should explicitly specify COM visibility -->
+        <!-- <Rule>
+            <Key>S3992</Key>
+        </Rule> -->
+        
+        <!-- Assemblies should have version information -->
+        <!-- <Rule>
+            <Key>S3904</Key>
+        </Rule> -->
+        
+        <!-- Assertion arguments should be passed in the correct order -->
+        <!-- <Rule>
+            <Key>S3415</Key>
+        </Rule> -->
+
+        <!-- Assignments should not be made from within sub-expressions -->
+        <Rule> 
+            <Key>S1121</Key>
+        </Rule>
+        
+        <!-- Attribute, EventArgs, and Exception type names should end with the type being extended -->
+        <!-- <Rule>
+            <Key>S3376</Key>
+        </Rule> -->
+        
+        <!-- Base class methods should not be hidden -->
+        <!-- <Rule>
+            <Key>S4019</Key>
+        </Rule> -->
+
+        <!-- Boolean checks should not be inverted -->
+        <Rule> 
+            <Key>S1940</Key>
+        </Rule>
+        
+        <!-- Boolean expressions should not be gratuitous -->
+        <!-- <Rule>
+            <Key>S2589</Key>
+        </Rule> -->
+        
+        <!-- Boolean literals should not be redundant -->
+        <!-- <Rule>
+            <Key>S1125</Key>
+        </Rule> -->
+        
+        <!-- Calculations should not overflow -->
+        <!-- <Rule>
+            <Key>S3949</Key>
+        </Rule> -->
+
+        <!-- Caller information arguments should not be provided explicitly -->
+        <Rule> 
+            <Key>S3236</Key>
+        </Rule>
+        
+        <!-- Caller information parameters should come at the end of the parameter list -->
+        <!-- <Rule>
+            <Key>S3343</Key>
+        </Rule> -->
+        
+        <!-- Calls to "async" methods should not be blocking -->
+        <!-- <Rule>
+            <Key>S4462</Key>
+        </Rule> -->
+        
+        <!-- Calls to delegate's method "BeginInvoke" should be paired with calls to "EndInvoke" -->
+        <!-- <Rule>
+            <Key>S4583</Key>
+        </Rule> -->
+        
+        <!-- Child class fields should not differ from parent class fields only by capitalization -->
+        <!-- <Rule>
+            <Key>S4025</Key>
+        </Rule> -->
+
+        <!-- Child class fields should not shadow parent class fields -->
+        <Rule> 
+            <Key>S2387</Key>
+        </Rule>
+        
+        <!-- Cipher algorithms should be robust -->
+        <!-- <Rule>
+            <Key>S5547</Key>
+        </Rule> -->
+
+        <!-- Classes directly extending "object" should not call "base" in "GetHashCode" or "Equals" -->
+        <Rule> 
+            <Key>S3249</Key>
+        </Rule>
+        
+        <!-- Classes implementing "IEquatable<T>" should be sealed -->
+        <!-- <Rule>
+            <Key>S4035</Key>
+        </Rule> -->
+
+        <!-- Classes should "Dispose" of members from the classes' own "Dispose" methods -->
+        <Rule> 
+            <Key>S2952</Key>
+        </Rule>
+        
+        <!-- Classes should implement their "ExportAttribute" interfaces -->
+        <!-- <Rule>
+            <Key>S4159</Key>
+        </Rule> -->
+        
+        <!-- Classes should not be coupled to too many other classes (Single Responsibility Principle) -->
+        <!-- <Rule>
+            <Key>S1200</Key>
+        </Rule> -->
+
+        <!-- Classes should not have only "private" constructors -->
+        <Rule> 
+            <Key>S3453</Key>
+        </Rule>
+
+        <!-- Classes that provide "Equals(<T>)" should implement "IEquatable<T>" -->
+        <Rule> 
+            <Key>S3897</Key>
+        </Rule>
+
+        <!-- Classes with "IDisposable" members should implement "IDisposable" -->
+        <Rule> 
+            <Key>S2931</Key>
+        </Rule>
+        
+        <!-- Cognitive Complexity of methods should not be too high -->
+        <!-- <Rule>
+            <Key>S3776</Key>
+        </Rule> -->
+        
+        <!-- Collapsible "if" statements should be merged -->
+        <!-- <Rule>
+            <Key>S1066</Key>
+        </Rule> -->
+        
+        <!-- Collection elements should not be replaced unconditionally -->
+        <!-- <Rule>
+            <Key>S4143</Key>
+        </Rule> -->
+        
+        <!-- Collection properties should be readonly -->
+        <!-- <Rule>
+            <Key>S4004</Key>
+        </Rule> -->
+        
+        <!-- Collection sizes and array length comparisons should make sense -->
+        <!-- <Rule>
+            <Key>S3981</Key>
+        </Rule> -->
+        
+        <!-- Collections should implement the generic interface -->
+        <!-- <Rule>
+            <Key>S3909</Key>
+        </Rule> -->
+        
+        <!-- Collections should not be passed as arguments to their own methods -->
+        <!-- <Rule>
+            <Key>S2114</Key>
+        </Rule> -->
+
+        <!-- Composite format strings should be used correctly -->
+        <Rule> 
+            <Key>S3457</Key>
+        </Rule>
+
+        <!-- Composite format strings should not lead to unexpected behavior at runtime -->
+        <Rule> 
+            <Key>S2275</Key>
+        </Rule>
+
+        <!-- Conditionally executed code should be reachable -->
+        <Rule> 
+            <Key>S2583</Key>
+        </Rule>
+        
+        <!-- Conditionals should start on new lines -->
+        <!-- <Rule>
+            <Key>S3972</Key>
+        </Rule> -->
+        
+        <!-- Configuring loggers is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4792</Key>
+        </Rule> -->
+
+        <!-- Console logging should not be used -->
+        <Rule> 
+            <Key>S2228</Key>
+        </Rule>
+
+        <!-- Constructor and destructor declarations should not be redundant -->
+        <Rule> 
+            <Key>S3253</Key>
+        </Rule>
+
+        <!-- Constructors should only call non-overridable methods -->
+        <Rule> 
+            <Key>S1699</Key>
+        </Rule>
+        
+        <!-- Control flow statements "if", "switch", "for", "foreach", "while", "do" and "try" should not be nested too deeply -->
+        <!-- <Rule>
+            <Key>S134</Key>
+        </Rule> -->
+
+        <!-- Control structures should use curly braces -->
+        <Rule> 
+            <Key>S121</Key>
+        </Rule>
+        
+        <!-- Controlling permissions is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4834</Key>
+        </Rule> -->
+        
+        <!-- Creating cookies without the "HttpOnly" flag is security-sensitive -->
+        <!-- <Rule>
+            <Key>S3330</Key>
+        </Rule> -->
+        
+        <!-- Creating cookies without the "secure" flag is security-sensitive -->
+        <!-- <Rule>
+            <Key>S2092</Key>
+        </Rule> -->
+        
+        <!-- Cryptographic keys should be robust -->
+        <!-- <Rule>
+            <Key>S4426</Key>
+        </Rule> -->
+
+        <!-- Culture should be specified for "string" operations -->
+        <Rule> 
+            <Key>S1449</Key>
+        </Rule>
+        
+        <!-- Custom attributes should be marked with "System.AttributeUsageAttribute" -->
+        <!-- <Rule>
+            <Key>S3993</Key>
+        </Rule> -->
+
+        <!-- Declarations and initializations should be as concise as possible -->
+        <Rule> 
+            <Key>S3257</Key>
+        </Rule>
+
+        <!-- Default parameter values should not be passed as arguments -->
+        <Rule> 
+            <Key>S3254</Key>
+        </Rule>
+
+        <!-- Delegates should not be subtracted -->
+        <Rule> 
+            <Key>S3172</Key>
+        </Rule>
+        
+        <!-- Delivering code in production with debug features activated is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4507</Key>
+        </Rule> -->
+
+        <!-- Deserialization methods should be provided for "OptionalField" members -->
+        <Rule> 
+            <Key>S3926</Key>
+        </Rule>
+        
+        <!-- Deserializing objects without performing data validation is security-sensitive -->
+        <!-- <Rule>
+            <Key>S5766</Key>
+        </Rule> -->
+        
+        <!-- Destructors should not throw exceptions -->
+        <!-- <Rule>
+            <Key>S1048</Key>
+        </Rule> -->
+        
+        <!-- Disposable types should declare finalizers -->
+        <!-- <Rule>
+            <Key>S4002</Key>
+        </Rule> -->
+
+        <!-- Doubled prefix operators "!!" and "~~" should not be used -->
+        <Rule> 
+            <Key>S2761</Key>
+        </Rule>
+
+        <!-- Duplicate casts should not be made -->
+        <Rule> 
+            <Key>S3247</Key>
+        </Rule>
+        
+        <!-- Duplicate values should not be passed as arguments -->
+        <!-- <Rule>
+            <Key>S4142</Key>
+        </Rule> -->
+
+        <!-- Empty "case" clauses that fall through to the "default" should be omitted -->
+        <Rule> 
+            <Key>S3458</Key>
+        </Rule>
+
+        <!-- Empty "default" clauses should be removed -->
+        <Rule> 
+            <Key>S3532</Key>
+        </Rule>
+        
+        <!-- Empty arrays and collections should be returned instead of null -->
+        <!-- <Rule>
+            <Key>S1168</Key>
+        </Rule> -->
+        
+        <!-- Empty collections should not be accessed or iterated -->
+        <!-- <Rule>
+            <Key>S4158</Key>
+        </Rule> -->
+
+        <!-- Empty nullable value should not be accessed -->
+        <Rule> 
+            <Key>S3655</Key>
+        </Rule>
+
+        <!-- Empty statements should be removed -->
+        <Rule> 
+            <Key>S1116</Key>
+        </Rule>
+        
+        <!-- Encrypting data is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4787</Key>
+        </Rule> -->
+        
+        <!-- Encryption algorithms should be used with secure mode and padding scheme -->
+        <!-- <Rule>
+            <Key>S5542</Key>
+        </Rule> -->
+        
+        <!-- Enumeration members should not be named "Reserved" -->
+        <!-- <Rule>
+            <Key>S4016</Key>
+        </Rule> -->
+        
+        <!-- Enumeration type names should not have "Flags" or "Enum" suffixes -->
+        <!-- <Rule>
+            <Key>S2344</Key>
+        </Rule> -->
+        
+        <!-- Enumeration types should comply with a naming convention -->
+        <!-- <Rule>
+            <Key>S2342</Key>
+        </Rule> -->
+        
+        <!-- Enumerations should have "Int32" storage -->
+        <!-- <Rule>
+            <Key>S4022</Key>
+        </Rule> -->
+        
+        <!-- Event Handlers should have the correct signature -->
+        <!-- <Rule>
+            <Key>S3906</Key>
+        </Rule> -->
+
+        <!-- Events should be invoked -->
+        <Rule> 
+            <Key>S3264</Key>
+        </Rule>
+        
+        <!-- Events should have proper arguments -->
+        <!-- <Rule>
+            <Key>S4220</Key>
+        </Rule> -->
+        
+        <!-- Exception constructors should not throw exceptions -->
+        <!-- <Rule>
+            <Key>S3693</Key>
+        </Rule> -->
+
+        <!-- Exception types should be "public" -->
+        <Rule> 
+            <Key>S3871</Key>
+        </Rule>
+        
+        <!-- Exceptions should not be created without being thrown -->
+        <!-- <Rule>
+            <Key>S3984</Key>
+        </Rule> -->
+
+        <!-- Exceptions should not be explicitly rethrown -->
+        <Rule> 
+            <Key>S3445</Key>
+        </Rule>
+
+        <!-- Exceptions should not be thrown from property getters -->
+        <Rule> 
+            <Key>S2372</Key>
+        </Rule>
+
+        <!-- Exceptions should not be thrown from unexpected methods -->
+        <Rule> 
+            <Key>S3877</Key>
+        </Rule>
+
+        <!-- Exceptions should not be thrown in finally blocks -->
+        <Rule> 
+            <Key>S1163</Key>
+        </Rule>
+        
+        <!-- Exceptions should provide standard constructors -->
+        <!-- <Rule>
+            <Key>S4027</Key>
+        </Rule> -->
+        
+        <!-- Exit methods should not be called -->
+        <!-- <Rule>
+            <Key>S1147</Key>
+        </Rule> -->
+        
+        <!-- Expanding archive files is security-sensitive -->
+        <!-- <Rule>
+            <Key>S5042</Key>
+        </Rule> -->
+        
+        <!-- Expressions should not be too complex -->
+        <!-- <Rule>
+            <Key>S1067</Key>
+        </Rule> -->
+        
+        <!-- Expressions used in "Debug.Assert" should not produce side effects -->
+        <!-- <Rule>
+            <Key>S3346</Key>
+        </Rule> -->
+        
+        <!-- Extension methods should not extend "object" -->
+        <!-- <Rule>
+            <Key>S4225</Key>
+        </Rule> -->
+        
+        <!-- Extensions should be in separate namespaces -->
+        <!-- <Rule>
+            <Key>S4226</Key>
+        </Rule> -->
+        
+        <!-- Field-like events should not be virtual -->
+        <!-- <Rule>
+            <Key>S2290</Key>
+        </Rule> -->
+
+        <!-- Fields should be private -->
+        <Rule> 
+            <Key>S2357</Key>
+        </Rule>
+
+        <!-- Fields should not have public accessibility -->
+        <Rule> 
+            <Key>S1104</Key>
+        </Rule>
+
+        <!-- Fields that are only assigned in the constructor should be "readonly" -->
+        <Rule> 
+            <Key>S2933</Key>
+        </Rule>
+        
+        <!-- Files should contain an empty newline at the end -->
+        <!-- <Rule>
+            <Key>S113</Key>
+        </Rule> -->
+        
+        <!-- Files should not have too many lines of code -->
+        <!-- <Rule>
+            <Key>S104</Key>
+        </Rule> -->
+
+        <!-- Finalizers should not be empty -->
+        <Rule> 
+            <Key>S3880</Key>
+        </Rule>
+
+        <!-- Flags enumerations should explicitly initialize all their members -->
+        <Rule> 
+            <Key>S2345</Key>
+        </Rule>
+        
+        <!-- Flags enumerations zero-value members should be named "None" -->
+        <!-- <Rule>
+            <Key>S2346</Key>
+        </Rule> -->
+
+        <!-- Floating point numbers should not be tested for equality -->
+        <Rule> 
+            <Key>S1244</Key>
+        </Rule>
+        
+        <!-- For-loop conditions should be true at least once -->
+        <!-- <Rule>
+            <Key>S2252</Key>
+        </Rule> -->
+        
+        <!-- Formatting SQL queries is security-sensitive -->
+        <!-- <Rule>
+            <Key>S2077</Key>
+        </Rule> -->
+        
+        <!-- Functions should not have too many lines of code -->
+        <!-- <Rule>
+            <Key>S138</Key>
+        </Rule> -->
+
+        <!-- General exceptions should never be thrown -->
+        <Rule> 
+            <Key>S112</Key>
+        </Rule>
+        
+        <!-- Generic event handlers should be used -->
+        <!-- <Rule>
+            <Key>S3908</Key>
+        </Rule> -->
+
+        <!-- Generic exceptions should not be ignored -->
+        <Rule> 
+            <Key>S2486</Key>
+        </Rule>
+        
+        <!-- Generic methods should provide type parameters -->
+        <!-- <Rule>
+            <Key>S4018</Key>
+        </Rule> -->
+
+        <!-- Generic parameters not constrained to reference types should not be compared to "null" -->
+        <Rule> 
+            <Key>S2955</Key>
+        </Rule>
+
+        <!-- Generic type parameters should be co/contravariant when possible -->
+        <Rule> 
+            <Key>S3246</Key>
+        </Rule>
+        
+        <!-- Generics should be used when appropriate -->
+        <!-- <Rule>
+            <Key>S4047</Key>
+        </Rule> -->
+        
+        <!-- Getters and setters should access the expected fields -->
+        <!-- <Rule>
+            <Key>S4275</Key>
+        </Rule> -->
+        
+        <!-- Hard-coded credentials are security-sensitive -->
+        <!-- <Rule>
+            <Key>S2068</Key>
+        </Rule> -->
+
+        <!-- Identical expressions should not be used on both sides of a binary operator -->
+        <Rule> 
+            <Key>S1764</Key>
+        </Rule>
+
+        <!-- Implementations should be provided for "partial" methods -->
+        <Rule> 
+            <Key>S3251</Key>
+        </Rule>
+
+        <!-- Inappropriate casts should not be made -->
+        <Rule> 
+            <Key>S1944</Key>
+        </Rule>
+        
+        <!-- Increment (++) and decrement (--) operators should not be used in a method call or mixed with other operators in an expression -->
+        <!-- <Rule>
+            <Key>S881</Key>
+        </Rule> -->
+        
+        <!-- Inheritance list should not be redundant -->
+        <!-- <Rule>
+            <Key>S1939</Key>
+        </Rule> -->
+
+        <!-- Inheritance tree of classes should not be too deep -->
+        <Rule> 
+            <Key>S110</Key>
+        </Rule>
+        
+        <!-- Inherited member visibility should not be decreased -->
+        <!-- <Rule>
+            <Key>S4015</Key>
+        </Rule> -->
+
+        <!-- Inner class members should not shadow outer class "static" or type members -->
+        <Rule> 
+            <Key>S3218</Key>
+        </Rule>
+
+        <!-- Instance members should not write to "static" fields -->
+        <Rule> 
+            <Key>S2696</Key>
+        </Rule>
+        
+        <!-- Integral numbers should not be shifted by zero or more than their number of bits-1 -->
+        <!-- <Rule>
+            <Key>S2183</Key>
+        </Rule> -->
+        
+        <!-- Interface methods should be callable by derived types -->
+        <!-- <Rule>
+            <Key>S4039</Key>
+        </Rule> -->
+        
+        <!-- Interfaces should not be empty -->
+        <!-- <Rule>
+            <Key>S4023</Key>
+        </Rule> -->
+
+        <!-- Interfaces should not simply inherit from base interfaces with colliding members -->
+        <Rule> 
+            <Key>S3444</Key>
+        </Rule>
+        
+        <!-- JWT should be signed and verified with strong cipher algorithms -->
+        <!-- <Rule>
+            <Key>S5659</Key>
+        </Rule> -->
+
+        <!-- Jump statements should not be redundant -->
+        <Rule> 
+            <Key>S3626</Key>
+        </Rule>
+        
+        <!-- LDAP connections should be authenticated -->
+        <!-- <Rule>
+            <Key>S4433</Key>
+        </Rule> -->
+        
+        <!-- Lines should not be too long -->
+        <!-- <Rule>
+            <Key>S103</Key>
+        </Rule> -->
+        
+        <!-- Literal boolean values should not be used in assertions -->
+        <!-- <Rule>
+            <Key>S2701</Key>
+        </Rule> -->
+        
+        <!-- Literal suffixes should be upper case -->
+        <!-- <Rule>
+            <Key>S818</Key>
+        </Rule> -->
+        
+        <!-- Literals should not be passed as localized parameters -->
+        <!-- <Rule>
+            <Key>S4055</Key>
+        </Rule> -->
+
+        <!-- Local variables should not shadow class fields -->
+        <Rule> 
+            <Key>S1117</Key>
+        </Rule>
+        
+        <!-- Locales should be set for data types -->
+        <!-- <Rule>
+            <Key>S4057</Key>
+        </Rule> -->
+        
+        <!-- Loops with at most one iteration should be refactored -->
+        <!-- <Rule>
+            <Key>S1751</Key>
+        </Rule> -->
+        
+        <!-- Magic numbers should not be used -->
+        <!-- <Rule>
+            <Key>S109</Key>
+        </Rule> -->
+        
+        <!-- Member initializer values should not be redundant -->
+        <!-- <Rule>
+            <Key>S3604</Key>
+        </Rule> -->
+
+        <!-- Members should not be initialized to default values -->
+        <Rule> 
+            <Key>S3052</Key>
+        </Rule>
+        
+        <!-- Members should not have conflicting transparency annotations -->
+        <!-- <Rule>
+            <Key>S4211</Key>
+        </Rule> -->
+
+        <!-- Method calls should not resolve ambiguously to overloads with "params" -->
+        <Rule> 
+            <Key>S3220</Key>
+        </Rule>
+        
+        <!-- Method overloads should be grouped together -->
+        <!-- <Rule>
+            <Key>S4136</Key>
+        </Rule> -->
+
+        <!-- Method overloads with default parameter values should not overlap -->
+        <Rule> 
+            <Key>S3427</Key>
+        </Rule>
+
+        <!-- Method overrides should not change parameter defaults -->
+        <Rule> 
+            <Key>S1006</Key>
+        </Rule>
+        
+        <!-- Method parameters should be declared with base types -->
+        <!-- <Rule>
+            <Key>S3242</Key>
+        </Rule> -->
+
+        <!-- Method parameters, caught exceptions and foreach variables' initial values should not be ignored -->
+        <Rule> 
+            <Key>S1226</Key>
+        </Rule>
+        
+        <!-- Method signatures should not contain nested generic types -->
+        <!-- <Rule>
+            <Key>S4017</Key>
+        </Rule> -->
+        
+        <!-- Methods and properties should be named in PascalCase -->
+        <!-- <Rule>
+            <Key>S100</Key>
+        </Rule> -->
+        
+        <!-- Methods and properties should not be too complex -->
+        <!-- <Rule>
+            <Key>S1541</Key>
+        </Rule> -->
+
+        <!-- Methods named "Dispose" should implement "IDisposable.Dispose" -->
+        <Rule> 
+            <Key>S2953</Key>
+        </Rule>
+        
+        <!-- Methods should be named according to their synchronicities -->
+        <!-- <Rule>
+            <Key>S4261</Key>
+        </Rule> -->
+
+        <!-- Methods should not be empty -->
+        <Rule> 
+            <Key>S1186</Key>
+        </Rule>
+        
+        <!-- Methods should not have identical implementations -->
+        <!-- <Rule>
+            <Key>S4144</Key>
+        </Rule> -->
+        
+        <!-- Methods should not have too many parameters -->
+        <!-- <Rule>
+            <Key>S107</Key>
+        </Rule> -->
+        
+        <!-- Methods should not return constants -->
+        <!-- <Rule>
+            <Key>S3400</Key>
+        </Rule> -->
+
+        <!-- Methods should not return values that are never used -->
+        <Rule> 
+            <Key>S3241</Key>
+        </Rule>
+
+        <!-- Methods with "Pure" attribute should return a value -->
+        <Rule> 
+            <Key>S3603</Key>
+        </Rule>
+
+        <!-- Modulus results should not be checked for direct equality -->
+        <Rule> 
+            <Key>S2197</Key>
+        </Rule>
+        
+        <!-- Multidimensional arrays should not be used -->
+        <!-- <Rule>
+            <Key>S3967</Key>
+        </Rule> -->
+
+        <!-- Multiline blocks should be enclosed in curly braces -->
+        <Rule> 
+            <Key>S2681</Key>
+        </Rule>
+
+        <!-- Multiple "OrderBy" calls should not be used -->
+        <Rule> 
+            <Key>S3169</Key>
+        </Rule>
+        
+        <!-- Multiple variables should not be declared on the same line -->
+        <!-- <Rule>
+            <Key>S1659</Key>
+        </Rule> -->
+
+        <!-- Mutable fields should not be "public static" -->
+        <Rule> 
+            <Key>S2386</Key>
+        </Rule>
+        
+        <!-- Mutable, non-private fields should not be "readonly" -->
+        <!-- <Rule>
+            <Key>S3887</Key>
+        </Rule> -->
+
+        <!-- Namespaces should not be empty -->
+        <Rule> 
+            <Key>S3261</Key>
+        </Rule>
+        
+        <!-- Native methods should be wrapped -->
+        <!-- <Rule>
+            <Key>S4200</Key>
+        </Rule> -->
+
+        <!-- Neither "Thread.Resume" nor "Thread.Suspend" should be used -->
+        <Rule> 
+            <Key>S3889</Key>
+        </Rule>
+
+        <!-- Neither DES (Data Encryption Standard) nor DESede (3DES) should be used -->
+        <Rule> 
+            <Key>S2278</Key>
+        </Rule>
+
+        <!-- Nested blocks of code should not be left empty -->
+        <Rule> 
+            <Key>S108</Key>
+        </Rule>
+        
+        <!-- Nested code blocks should not be used -->
+        <!-- <Rule>
+            <Key>S1199</Key>
+        </Rule> -->
+        
+        <!-- Non-abstract attributes should be sealed -->
+        <!-- <Rule>
+            <Key>S4060</Key>
+        </Rule> -->
+        
+        <!-- Non-async "Task/Task<T>" methods should not return null -->
+        <!-- <Rule>
+            <Key>S4586</Key>
+        </Rule> -->
+
+        <!-- Non-constant static fields should not be visible -->
+        <Rule> 
+            <Key>S2223</Key>
+        </Rule>
+        
+        <!-- Non-flags enums should not be marked with "FlagsAttribute" -->
+        <!-- <Rule>
+            <Key>S4070</Key>
+        </Rule> -->
+        
+        <!-- Non-flags enums should not be used in bitwise operations -->
+        <!-- <Rule>
+            <Key>S3265</Key>
+        </Rule> -->
+        
+        <!-- Null checks should not be used with "is" -->
+        <!-- <Rule>
+            <Key>S4201</Key>
+        </Rule> -->
+
+        <!-- Null pointers should not be dereferenced -->
+        <Rule> 
+            <Key>S2259</Key>
+        </Rule>
+        
+        <!-- NullReferenceException should not be caught -->
+        <!-- <Rule>
+            <Key>S1696</Key>
+        </Rule> -->
+
+        <!-- Nullable type comparison should not be redundant -->
+        <Rule> 
+            <Key>S3610</Key>
+        </Rule>
+        
+        <!-- Number patterns should be regular -->
+        <!-- <Rule>
+            <Key>S3937</Key>
+        </Rule> -->
+        
+        <!-- Objects should not be created to be dropped immediately without being used -->
+        <!-- <Rule>
+            <Key>S1848</Key>
+        </Rule> -->
+        
+        <!-- Objects should not be disposed more than once -->
+        <!-- <Rule>
+            <Key>S3966</Key>
+        </Rule> -->
+
+        <!-- One-way "OperationContract" methods should have "void" return type -->
+        <Rule> 
+            <Key>S3598</Key>
+        </Rule>
+        
+        <!-- Operator overloads should have named alternatives -->
+        <!-- <Rule>
+            <Key>S4069</Key>
+        </Rule> -->
+        
+        <!-- Operators should be overloaded consistently -->
+        <!-- <Rule>
+            <Key>S4050</Key>
+        </Rule> -->
+
+        <!-- Optional parameters should be passed to "base" calls -->
+        <Rule> 
+            <Key>S3466</Key>
+        </Rule>
+
+        <!-- Optional parameters should not be used -->
+        <Rule> 
+            <Key>S2360</Key>
+        </Rule>
+
+        <!-- Overflow checking should not be disabled for "Enumerable.Sum" -->
+        <Rule> 
+            <Key>S2291</Key>
+        </Rule>
+        
+        <!-- Overloads with a "CultureInfo" or an "IFormatProvider" parameter should be used -->
+        <!-- <Rule>
+            <Key>S4056</Key>
+        </Rule> -->
+        
+        <!-- Overloads with a "StringComparison" parameter should be used -->
+        <!-- <Rule>
+            <Key>S4058</Key>
+        </Rule> -->
+
+        <!-- Overriding members should do more than simply call the same member in the base class -->
+        <Rule> 
+            <Key>S1185</Key>
+        </Rule>
+
+        <!-- Parameter names should not duplicate the names of their methods -->
+        <Rule> 
+            <Key>S3872</Key>
+        </Rule>
+        
+        <!-- Parameter names used into ArgumentException constructors should match an existing one -->
+        <!-- <Rule>
+            <Key>S3928</Key>
+        </Rule> -->
+        
+        <!-- Parameter validation in "async"/"await" methods should be wrapped -->
+        <!-- <Rule>
+            <Key>S4457</Key>
+        </Rule> -->
+        
+        <!-- Parameter validation in yielding methods should be wrapped -->
+        <!-- <Rule>
+            <Key>S4456</Key>
+        </Rule> -->
+
+        <!-- Parameters should be passed in the correct order -->
+        <Rule> 
+            <Key>S2234</Key>
+        </Rule>
+
+        <!-- Parameters with "[DefaultParameterValue]" attributes should also be marked "[Optional]" -->
+        <Rule> 
+            <Key>S3450</Key>
+        </Rule>
+        
+        <!-- Pointers to unmanaged memory should not be visible -->
+        <!-- <Rule>
+            <Key>S4000</Key>
+        </Rule> -->
+
+        <!-- Private fields only used as local variables in methods should become local variables -->
+        <Rule> 
+            <Key>S1450</Key>
+        </Rule>
+        
+        <!-- Properties should be preferred -->
+        <!-- <Rule>
+            <Key>S4049</Key>
+        </Rule> -->
+        
+        <!-- Properties should not make collection or array copies -->
+        <!-- <Rule>
+            <Key>S2365</Key>
+        </Rule> -->
+
+        <!-- Property assignments should not be made for "readonly" fields not constrained to reference types -->
+        <Rule> 
+            <Key>S2934</Key>
+        </Rule>
+        
+        <!-- Property names should not match get methods -->
+        <!-- <Rule>
+            <Key>S4059</Key>
+        </Rule> -->
+
+        <!-- Public constant members should not be used -->
+        <Rule> 
+            <Key>S2339</Key>
+        </Rule>
+
+        <!-- Public methods should not have multidimensional array parameters -->
+        <Rule> 
+            <Key>S2368</Key>
+        </Rule>
+        
+        <!-- Reading the Standard Input is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4829</Key>
+        </Rule> -->
+
+        <!-- Recursion should not be infinite -->
+        <Rule> 
+            <Key>S2190</Key>
+        </Rule>
+
+        <!-- Redundant casts should not be used -->
+        <Rule> 
+            <Key>S1905</Key>
+        </Rule>
+
+        <!-- Redundant modifiers should not be used -->
+        <Rule> 
+            <Key>S2333</Key>
+        </Rule>
+        
+        <!-- Redundant pairs of parentheses should be removed -->
+        <!-- <Rule>
+            <Key>S1110</Key>
+        </Rule> -->
+
+        <!-- Redundant parentheses should not be used -->
+        <Rule> 
+            <Key>S3235</Key>
+        </Rule>
+
+        <!-- Redundant property names should be omitted in anonymous classes -->
+        <Rule> 
+            <Key>S3441</Key>
+        </Rule>
+        
+        <!-- Reflection should not be used to increase accessibility of classes, methods, or fields -->
+        <!-- <Rule>
+            <Key>S3011</Key>
+        </Rule> -->
+
+        <!-- Related "if/else if" statements should not have the same condition -->
+        <Rule> 
+            <Key>S1862</Key>
+        </Rule>
+
+        <!-- Results of integer division should not be assigned to floating point variables -->
+        <Rule> 
+            <Key>S2184</Key>
+        </Rule>
+
+        <!-- Return values from functions without side effects should not be ignored -->
+        <Rule> 
+            <Key>S2201</Key>
+        </Rule>
+
+        <!-- Right operands of shift operators should be integers -->
+        <Rule> 
+            <Key>S3449</Key>
+        </Rule>
+        
+        <!-- Runtime type checking should be simplified -->
+        <!-- <Rule>
+            <Key>S2219</Key>
+        </Rule> -->
+
+        <!-- SHA-1 and Message-Digest hash algorithms should not be used in secure contexts -->
+        <Rule> 
+            <Key>S2070</Key>
+        </Rule>
+        
+        <!-- SQL keywords should be delimited by whitespace -->
+        <!-- <Rule>
+            <Key>S2857</Key>
+        </Rule> -->
+
+        <!-- Sections of code should not be commented out -->
+        <Rule> 
+            <Key>S125</Key>
+        </Rule>
+
+        <!-- Sequential tests should not check the same condition -->
+        <Rule> 
+            <Key>S2760</Key>
+        </Rule>
+        
+        <!-- Serialization constructors should be secured -->
+        <!-- <Rule>
+            <Key>S4212</Key>
+        </Rule> -->
+        
+        <!-- Serialization event handlers should be implemented correctly -->
+        <!-- <Rule>
+            <Key>S3927</Key>
+        </Rule> -->
+        
+        <!-- Server certificates should be verified during SSL/TLS connections -->
+        <!-- <Rule>
+            <Key>S4830</Key>
+        </Rule> -->
+
+        <!-- Shared resources should not be used for locking -->
+        <Rule> 
+            <Key>S2551</Key>
+        </Rule>
+
+        <!-- Short-circuit logic should be used in boolean contexts -->
+        <Rule> 
+            <Key>S2178</Key>
+        </Rule>
+
+        <!-- Short-circuit logic should be used to prevent null pointer dereferences in conditionals -->
+        <Rule> 
+            <Key>S1697</Key>
+        </Rule>
+
+        <!-- Silly bit operations should not be performed -->
+        <Rule> 
+            <Key>S2437</Key>
+        </Rule>
+        
+        <!-- Standard outputs should not be used directly to log anything -->
+        <!-- <Rule>
+            <Key>S106</Key>
+        </Rule> -->
+        
+        <!-- Statements should be on separate lines -->
+        <!-- <Rule>
+            <Key>S122</Key>
+        </Rule> -->
+
+        <!-- Static fields should appear in the order they must be initialized -->
+        <Rule> 
+            <Key>S3263</Key>
+        </Rule>
+
+        <!-- Static fields should not be updated in constructors -->
+        <Rule> 
+            <Key>S3010</Key>
+        </Rule>
+
+        <!-- Static fields should not be used in generic types -->
+        <Rule> 
+            <Key>S2743</Key>
+        </Rule>
+        
+        <!-- String URI overloads should call "System.Uri" overloads -->
+        <!-- <Rule>
+            <Key>S3997</Key>
+        </Rule> -->
+        
+        <!-- String literals should not be duplicated -->
+        <!-- <Rule>
+            <Key>S1192</Key>
+        </Rule> -->
+        
+        <!-- String offset-based methods should be preferred for finding substrings from offsets -->
+        <!-- <Rule>
+            <Key>S4635</Key>
+        </Rule> -->
+
+        <!-- Strings or integral types should be used for indexers -->
+        <Rule> 
+            <Key>S3876</Key>
+        </Rule>
+        
+        <!-- Strings should be normalized to uppercase -->
+        <!-- <Rule>
+            <Key>S4040</Key>
+        </Rule> -->
+
+        <!-- Strings should not be concatenated using '+' in a loop -->
+        <Rule> 
+            <Key>S1643</Key>
+        </Rule>
+        
+        <!-- Tabulation characters should not be used -->
+        <!-- <Rule>
+            <Key>S105</Key>
+        </Rule> -->
+        
+        <!-- Ternary operators should not be nested -->
+        <!-- <Rule>
+            <Key>S3358</Key>
+        </Rule> -->
+        
+        <!-- Test method signatures should be correct -->
+        <!-- <Rule>
+            <Key>S3433</Key>
+        </Rule> -->
+        
+        <!-- TestCases should contain tests -->
+        <!-- <Rule>
+            <Key>S2187</Key>
+        </Rule> -->
+        
+        <!-- Tests should include assertions -->
+        <!-- <Rule>
+            <Key>S2699</Key>
+        </Rule> -->
+        
+        <!-- Tests should not be ignored -->
+        <!-- <Rule>
+            <Key>S1607</Key>
+        </Rule> -->
+
+        <!-- The length returned from a stream read should be checked -->
+        <Rule> 
+            <Key>S2674</Key>
+        </Rule>
+        
+        <!-- The simplest possible condition syntax should be used -->
+        <!-- <Rule>
+            <Key>S3240</Key>
+        </Rule> -->
+        
+        <!-- The ternary operator should not return the same value regardless of the condition -->
+        <!-- <Rule>
+            <Key>S2758</Key>
+        </Rule> -->
+        
+        <!-- Threads should not lock on objects with weak identity -->
+        <!-- <Rule>
+            <Key>S3998</Key>
+        </Rule> -->
+        
+        <!-- Track lack of copyright and license headers -->
+        <!-- <Rule>
+            <Key>S1451</Key>
+        </Rule> -->
+        
+        <!-- Track use of "NotImplementedException" -->
+        <!-- <Rule>
+            <Key>S3717</Key>
+        </Rule> -->
+        
+        <!-- Track uses of "FIXME" tags -->
+        <!-- <Rule>
+            <Key>S1134</Key>
+        </Rule> -->
+        
+        <!-- Track uses of "TODO" tags -->
+        <!-- <Rule>
+            <Key>S1135</Key>
+        </Rule> -->
+        
+        <!-- Track uses of in-source issue suppressions -->
+        <!-- <Rule>
+            <Key>S1309</Key>
+        </Rule> -->
+        
+        <!-- Trivial properties should be auto-implemented -->
+        <!-- <Rule>
+            <Key>S2292</Key>
+        </Rule> -->
+
+        <!-- Two branches in a conditional structure should not have exactly the same implementation -->
+        <Rule> 
+            <Key>S1871</Key>
+        </Rule>
+        
+        <!-- Type inheritance should not be recursive -->
+        <!-- <Rule>
+            <Key>S3464</Key>
+        </Rule> -->
+        
+        <!-- Type names should not match namespaces -->
+        <!-- <Rule>
+            <Key>S4041</Key>
+        </Rule> -->
+
+        <!-- Type should not be examined on "System.Type" instances -->
+        <Rule> 
+            <Key>S3443</Key>
+        </Rule>
+        
+        <!-- Types allowed to be deserialized should be restricted -->
+        <!-- <Rule>
+            <Key>S5773</Key>
+        </Rule> -->
+        
+        <!-- Types and methods should not have too many generic parameters -->
+        <!-- <Rule>
+            <Key>S2436</Key>
+        </Rule> -->
+        
+        <!-- Types should be defined in named namespaces -->
+        <!-- <Rule>
+            <Key>S3903</Key>
+        </Rule> -->
+        
+        <!-- Types should be named in PascalCase -->
+        <!-- <Rule>
+            <Key>S101</Key>
+        </Rule> -->
+        
+        <!-- Types should not extend outdated base types -->
+        <!-- <Rule>
+            <Key>S4052</Key>
+        </Rule> -->
+        
+        <!-- URI Parameters should not be strings -->
+        <!-- <Rule>
+            <Key>S3994</Key>
+        </Rule> -->
+        
+        <!-- URI properties should not be strings -->
+        <!-- <Rule>
+            <Key>S3996</Key>
+        </Rule> -->
+        
+        <!-- URI return values should not be strings -->
+        <!-- <Rule>
+            <Key>S3995</Key>
+        </Rule> -->
+        
+        <!-- URIs should not be hardcoded -->
+        <!-- <Rule>
+            <Key>S1075</Key>
+        </Rule> -->
+
+        <!-- Unassigned members should be removed -->
+        <Rule> 
+            <Key>S3459</Key>
+        </Rule>
+        
+        <!-- Unchanged local variables should be "const" -->
+        <!-- <Rule>
+            <Key>S3353</Key>
+        </Rule> -->
+        
+        <!-- Underscores should be used to make large numbers readable -->
+        <!-- <Rule>
+            <Key>S2148</Key>
+        </Rule> -->
+        
+        <!-- Unread "private" fields should be removed -->
+        <!-- <Rule>
+            <Key>S4487</Key>
+        </Rule> -->
+        
+        <!-- Unused "using" should be removed -->
+        <!-- <Rule>
+            <Key>S1128</Key>
+        </Rule> -->
+
+        <!-- Unused assignments should be removed -->
+        <Rule> 
+            <Key>S1854</Key>
+        </Rule>
+
+        <!-- Unused local variables should be removed -->
+        <Rule> 
+            <Key>S1481</Key>
+        </Rule>
+
+        <!-- Unused method parameters should be removed -->
+        <Rule> 
+            <Key>S1172</Key>
+        </Rule>
+
+        <!-- Unused type parameters should be removed -->
+        <Rule> 
+            <Key>S2326</Key>
+        </Rule>
+
+        <!-- Useless "if(true) {...}" and "if(false){...}" blocks should be removed -->
+        <Rule> 
+            <Key>S1145</Key>
+        </Rule>
+        
+        <!-- Using Sockets is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4818</Key>
+        </Rule> -->
+        
+        <!-- Using command line arguments is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4823</Key>
+        </Rule> -->
+
+        <!-- Using hardcoded IP addresses is security-sensitive -->
+        <Rule> 
+            <Key>S1313</Key>
+        </Rule>
+        
+        <!-- Using pseudorandom number generators (PRNGs) is security-sensitive -->
+        <!-- <Rule>
+            <Key>S2245</Key>
+        </Rule> -->
+        
+        <!-- Using regular expressions is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4784</Key>
+        </Rule> -->
+        
+        <!-- Using weak hashing algorithms is security-sensitive -->
+        <!-- <Rule>
+            <Key>S4790</Key>
+        </Rule> -->
+
+        <!-- Utility classes should not have public constructors -->
+        <Rule> 
+            <Key>S1118</Key>
+        </Rule>
+
+        <!-- Value types should implement "IEquatable<T>" -->
+        <Rule> 
+            <Key>S3898</Key>
+        </Rule>
+
+        <!-- Values should not be uselessly incremented -->
+        <Rule> 
+            <Key>S2123</Key>
+        </Rule>
+
+        <!-- Variables should not be checked against the values they're about to be assigned -->
+        <Rule> 
+            <Key>S3440</Key>
+        </Rule>
+
+        <!-- Variables should not be self-assigned -->
+        <Rule> 
+            <Key>S1656</Key>
+        </Rule>
+        
+        <!-- Whitespace and control characters in string literals should be explicit -->
+        <!-- <Rule>
+            <Key>S2479</Key>
+        </Rule> -->
+        
+        <!-- Windows Forms entry points should be marked with STAThread -->
+        <!-- <Rule>
+            <Key>S4210</Key>
+        </Rule> -->
+
+        <!-- Write-only properties should not be used -->
+        <Rule> 
+            <Key>S2376</Key>
+        </Rule>
+        
+        <!-- Writing cookies is security-sensitive -->
+        <!-- <Rule>
+            <Key>S2255</Key>
+        </Rule> -->
+        
+        <!-- XML parsers should not be vulnerable to XXE attacks -->
+        <!-- <Rule>
+            <Key>S2755</Key>
+        </Rule> -->
+        
+        <!-- break statements should not be used except for switch cases -->
+        <!-- <Rule>
+            <Key>S1227</Key>
+        </Rule> -->
+
+        <!-- parameter names should match base declaration and other partial definitions -->
+        <Rule> 
+            <Key>S927</Key>
+        </Rule>
+    </Rules>
+</AnalysisInput>
